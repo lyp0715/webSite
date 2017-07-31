@@ -1,0 +1,652 @@
+<html xmlns:wb="http://open.weibo.com/wb">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>小泽官网</title>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta property="wb:webmaster" content="29d4298cdc0eb183" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----网页字体---->
+		<link rel='icon' href=/images/ico.png type='image/x-ico'/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<!----//网页字体---->
+		<!---有生命的头--->
+		 <link href="css/animate.css" rel="stylesheet" type="text/css" />
+		 <!---有生命的头--->
+		<!---滑块---->
+		<script src="js/jquery.min.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1385871657" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/slippry.css">
+		<script src="js/jquery-ui.js" type="text/javascript"></script>
+		<script src="js/scripts-f0e4e0c2.js" type="text/javascript"></script>
+		<script>
+			  jQuery('#jquery-demo').slippry({
+			  //一般元素与包装
+			  slippryWrapper: '<div class="sy-box jquery-demo" />', // 包装包装的一切,包括寻呼机
+			  // options
+			  adaptiveHeight: false, //滑块的高度适应当前的幻灯片
+			  useCSS: false, // true, false ->回退到js如果没有浏览器支持
+			  autoHover: false,
+			  transition: 'fade'
+			});
+		</script>
+		<!---scrooling-脚本--->
+		<!---smoth-scrlling---->
+							<script type="text/javascript">
+									$(document).ready(function(){
+									$('a[href^="#"]').on('click',function (e) {
+									    e.preventDefault();
+									    var target = this.hash,
+									    $target = $(target);
+									    $('html, body').stop().animate({
+									        'scrollTop': $target.offset().top
+									    }, 1000, 'swing', function () {
+									        window.location.hash = target;
+									    });
+									});
+								});
+							</script>
+					<!---//smoth-scrlling---->
+		<!---//scrooling-script--->
+		<!-----768px-菜单----->
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+			<script type="text/javascript">
+				//	The 菜单 on the left
+				$(function() {
+					$('nav#menu-left').mmenu();
+				});
+		</script>
+		<!-----//768px-菜单----->
+		
+		
+		
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ef467ac77b26051c8eea5bb17f7c8c54";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	<script language=JavaScript>
+
+var caution = false
+function setCookie(name, value, expires, path, domain, secure) {
+var curCookie = name + "=" + escape(value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "")
+if (!caution || (name + "=" + escape(value)).length <= 4000)
+document.cookie = curCookie
+else
+if (confirm("Cookie exceeds 4KB and will be cut!"))
+document.cookie = curCookie
+}
+function getCookie(name) {
+var prefix = name + "="
+var cookieStartIndex = document.cookie.indexOf(prefix)
+if (cookieStartIndex == -1)
+return null
+var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+if (cookieEndIndex == -1)
+cookieEndIndex = document.cookie.length
+return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+}
+function deleteCookie(name, path, domain) {
+if (getCookie(name)) {
+document.cookie = name + "=" +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+}
+}
+function fixDate(date) {
+var base = new Date(0)
+var skew = base.getTime()
+if (skew > 0)
+date.setTime(date.getTime() - skew)
+}
+var now = new Date()
+fixDate(now)
+now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+var visits = getCookie("counter")
+if (!visits)
+visits = 1
+else
+visits = parseInt(visits) + 1
+setCookie("counter", visits, now)
+document.write(" <font color=red><h6>小泽统计<br>您是第" + visits + "次访问总站</h6></font>")
+
+</script>	
+		
+		
+	<script type="text/javascript">
+var sec =0;
+var minu=0;
+var hou=0;
+//每隔一秒刷新一次
+window.setTimeout("uupdate()",1000);
+
+function uupdate()
+{
+    sec++;    
+    if(sec==60)
+    {
+        sec =0;
+        minu +=1;
+    }
+    if(minu==60)
+    {
+        minu=0;
+        hou+=1;
+    }
+    var stoptime ="<font color=red>"+hou+"</font>时<font color=red>"+minu+"</font>分<font color=red>"+sec+"</font>秒";
+    document.getElementById('stoptime').innerHTML=stoptime;
+    window.setTimeout("uupdate()",1000);
+}
+</script>		
+	</head>
+	<body><div><font color=red>本次访问停留时间：</font><span id="stoptime" >0时0分0秒</span></div>
+		<div><wb:login-button type="6,1" onlogin="login" onlogout="logout">登录按钮</wb:login-button></div>
+		<!---开始包装---->
+			<!---start-banner---->
+			<div class="banner" id="move-top">
+				<!----start-header---->
+				<div class="header animated bounceInDown">
+					<!------start-768px-菜单---->
+						<div id="page">
+								<div id="header">
+									<a class="navicon" href="#menu-left"> </a>
+								</div>
+								<nav id="menu-left">
+								<ul>
+										<li class="active"><a href="http://www.lyp001.top/">总站首页<span> </span></a></li>
+										<li><a href="http://lyp0715.3vfree.com/">子站<span> </span></a></li>
+										<li><a href="http://blog.sina.com.cn/u/5588610500">新浪博客</a></li>
+										<li><a href="#link" onMouseOut="hideImg()"  onmouseover="showImg()">微信公众号</a></li>
+										<li><a href="https://www.lyp001.cn/lypblog">小泽社区</a></li>
+										<li><a href="video/videoIndex.html">资源下载中心</a></li>										
+								</ul>
+								</nav>
+							</div>
+					<!------start-768px-菜单---->
+					<div class="wrap">
+						<!---开始启动---->
+						<div class="logo">
+							<a data-scroll-reveal="enter from the top over 0.7s" href="#"> <img src="images/logo.png" title="KreativePixel" /></a>
+						</div>
+						<!---//结束启动---->
+						<!---开始顶部导航---->
+						<div data-scroll-reveal="enter from the top over 0.7s" class="top-nav">
+							<ul>
+								<li class="active"><a href="http://www.lyp001.top/">总站首页<span> </span></a></li>
+								<li><a href="http://lyp0715.3vfree.com/">子站<span> </span></a></li>
+								<li><a href="http://blog.sina.com.cn/u/5588610500">新浪博客</a></li>
+								<li><a href="#link">微信公众号</a></li>
+								<li><a href="https://www.lyp001.cn/lypblog">小泽社区</a></li>
+								<li><a href="video/videoIndex.html">资源下载中心</a></li>									
+							</ul>
+						</div>
+						<div class="clear"> </div>
+						<!---//结束顶部导航---->
+					</div>
+				</div>
+				
+				<!----//头部结束---->
+				<!----开始-图片-滑动---->
+					<div data-scroll-reveal="enter bottom but wait 0.7s" class="img-slider" id="home">
+						<div class="wrap">
+							<ul id="jquery-demo">
+							  <li>
+							    <a href="#slide1">
+							    </a>
+							    <div data-scroll-reveal="enter bottom but wait 0.7s" class="slider-detils">
+							    	<h3>小泽设计 <label>有创意的网站</label> 网站</h3>
+							    	<span>欢迎来到本站<i> 管理员-小泽</i></span>
+							    	
+									<a  class="slide-btn" target="_blank" href="http://wpa.qq.com/msgrd?v=1&uin=1360461332&site=www.lyp001.cn&menu=yes">联系小泽</a>
+							    </div>
+							  </li>
+							  <li>
+							    <a href="#slide2">
+							    </a>
+							      <div data-scroll-reveal="enter bottom but wait 0.7s" class="slider-detils">
+							    <h5>敬请关注 <label>新浪技术博客</label> 共同探讨开发技术</h5>
+							    	<span>博客地址:<a href="http://blog.sina.com.cn/u/5588610500">点击查看</a><i> 管理员-小泽</i></span>
+							    	<a  class="slide-btn" target="_blank" href="http://wpa.qq.com/msgrd?v=1&uin=1360461332&site=www.lyp001.cn&menu=yes">联系小泽</a>
+							    </div>
+							  </li>
+							  <li>
+							    <a href="#slide3">
+							    </a>
+							      <div data-scroll-reveal="enter bottom but wait 1.5s" class="slider-detils">
+							    	<h3>欢迎关注<label>微信订阅号</label>及时获取动态</h3>
+							    	<span><a href="#link">点击关注</a><i> 管理员-小泽</i></span>
+							    	<a  class="slide-btn" target="_blank" href="http://wpa.qq.com/msgrd?v=1&uin=1360461332&site=www.lyp001.cn&menu=yes">联系小泽</a>
+							    </div>
+							  </li>
+							</ul>
+						</div>
+					</div>
+					<div class="clear"> </div>
+				</div>
+					<!----//结束-图片-滑动---->
+					<!---开始-顶部-网格---->
+					<div class="top-grids" id="fea">
+						<div class="wrap">
+							<h3><span>关注</span>小泽</h3>
+							<i> </i>
+							<div data-scroll-reveal="enter bottom but wait 0.7s" class="top-grids-box">
+								<div data-scroll-reveal="enter top over 0.7s after 0.7s" class="top-grid">
+										<a class="icon4" href="#"><span> </span></a>
+									
+									<h4><a href="#">官方博客</a></h4>
+									<p> 小泽的个人官方博客</p>
+									<a class="btn" href="http://blog.sina.com.cn/u/5588610500">点击进入</a>
+								</div>
+								<div data-scroll-reveal="enter top over 0.7s after 0.7s" class="top-grid">
+									<a class="icon4" href="#"><span> </span></a>
+									<h4><a href="#">官方网站</a></h4>
+									<p> 小泽的个人网站</p>
+									<a class="btn" href="http://www.lyp001.top/">点击进入</a>
+								</div>
+								<div data-scroll-reveal="enter top over 0.7s after 0.7s" class="top-grid">
+									<a class="icon4" href="#"><span> </span></a>
+									<h4><a href="#">官方微信公众号</a></h4>
+									<p> 小泽的个人公众号.</p>
+									<a class="btn" href="#link">点击关注</a>
+								</div>
+							<div data-scroll-reveal="enter top over 0.7s after 0.7s" class="top-grid">
+									<a class="icon4" href="#"><span> </span></a>
+									<h4><a href="#">个人资料</a></h4>
+									<p> 小泽的个人资料.</p>
+									<a class="btn" href="xiaoze.html"  target="_blank">点击查看</a>
+								</div>
+								<div class="clear"> </div>
+							</div>
+						</div>
+					</div>
+					<!---//结束-顶部-网格---->
+					<!---- 开始-作品---->
+					<!-- Owl Carousel Assets -->
+					<link href="css/owl.carousel.css" rel="stylesheet">
+					     <!-- Owl Carousel Assets -->
+					    <!-- Prettify -->
+					    <script src="js/owl.carousel.js"></script>
+					        <script>
+					    $(document).ready(function() {
+					
+					      $("#owl-demo").owlCarousel({
+					        items : 1,
+					        lazyLoad : true,
+					        autoPlay : true,
+					        navigation : true,
+						    navigationText : ["",""],
+						    rewindNav : false,
+						    scrollPerPage : false,
+						    pagination : false,
+			    			paginationNumbers: false,
+					      });
+					
+					    });
+					    </script>
+					   <!-- //Owl Carousel Assets -->
+					<div class="works" id="work">
+						<h3><span>欣赏唯美</span>作品</h3>
+						<i> </i>
+						<!-- start content_slider -->
+						<!---work-grid-capition-script---->
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$('.fade').hover(
+									function(){
+										$(this).find('.caption').fadeIn(250);
+									},
+									function(){
+										$(this).find('.caption').fadeOut(250);
+									}
+								);
+							});
+							</script>
+						<!---//work-grid-capition-script---->
+				<!---//结束-画廊-脚本----->
+					       <div id="owl-demo" class="owl-carousel">
+				                <div class="item" id="example1">
+				                	<div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>小狗乖乖</h4>
+							                <p>聪明的小朋友在抚摸宠物</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w1.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>美丽的山</h4>
+							                <p>更美丽的群山的照片</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w2.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>小鸟栖息</h4>
+							                <p>孤单的鸟儿栖息在破败的门上</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w3.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>都市美景</h4>
+							                <p>现代都市的繁华与美丽</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w4.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>幽静天堂</h4>
+							                <p>静静的山 碧绿的水 营造了美好的意境</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w5.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>深海石林</h4>
+							                <p>海与石林 相辉相映</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w6.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>密林人踪</h4>
+							                <p>密密麻麻的深林 营造出一股神秘气息</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w7.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>山石海浪</h4>
+							                <p>波涛汹涌的海浪 拍打在悬崖上</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w8.jpg" />
+							        </div>
+				                </div>
+				                <div class="item" id="example2">
+				                	<div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>小狗乖乖</h4>
+							                <p>聪明的小朋友在抚摸宠物</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w1.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>美丽的山</h4>
+							                <p>更美丽的群山的照片</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w2.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>小鸟栖息</h4>
+							                <p>孤单的鸟儿栖息在破败的门上</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w3.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>都市美景</h4>
+							                <p>现代都市的繁华与美丽</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w4.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>幽静天堂</h4>
+							                <p>静静的山 碧绿的水 营造了美好的意境</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w5.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>深海石林</h4>
+							                <p>海与石林 相辉相映</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w6.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>密林人踪</h4>
+							                <p>密密麻麻的深林 营造出一股神秘气息</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w7.jpg" />
+							        </div>
+							        <div data-scroll-reveal="enter bottom but wait 0.7s" class="grid-block fade">
+							        	<div class="caption">
+							            	<h4>山石海浪</h4>
+							                <p>波涛汹涌的海浪 拍打在悬崖上</p>
+							               	<ul>
+							               		<li><a class="w-icon1" href="#"><span> </span></a></li>
+							               		<li><a class="w-icon2" href="#"><span> </span></a></li>
+							               		<div class="clear"> </div>
+							               	</ul>
+							            </div>
+							        	<img src="images/w8.jpg" />
+							        </div>
+				                </div>
+			              </div>
+				<!----//End-img-cursual---->
+					</div>
+					<!---- //End-works---->
+					<!---start-blog---->
+					<div class="blog" id="blog">
+						<div class="wrap">
+							<h3><span>扫码</span> 关注 小泽</h3>
+							<i> </i>
+							<div class="blog-artical-grids">
+								<div data-scroll-reveal="enter bottom but wait 0.7s" class="artical-grid">
+									<div class="artical-grid-head">
+										<img class="post-pic" src="images/weixin.jpg">
+									</div>
+									<div id='link' class="artical-info">
+										<label class="poston">微信公众号</label>
+										<p>打开微信, 扫描二维码   关注个人官方公众号</p>
+									</div>
+								</div>
+								<div data-scroll-reveal="enter bottom but wait 0.7s" class="artical-grid">
+									<div class="artical-grid-head">
+										<img class="post-pic" src="images/xinlang.jpg">
+										
+									</div>
+									<div class="artical-info">
+										<label class="poston">小泽官方博客</label>
+										<p>打开二维码扫描器, 扫描二维码   关注个人新浪官方博客<>									</div>
+								</div>
+								<div data-scroll-reveal="enter bottom but wait 0.7s" class="artical-grid">
+									<div class="artical-grid-head">
+										<img class="post-pic" src="images/webstack.jpg">
+									</div>
+									<div class="artical-info">
+										<label class="poston">小泽个人官方网站</label>
+										<p>打开二维码扫描器, 扫描二维码   关注个人官方网站</p>
+									</div>
+								</div>
+								<div class="clear"> </div>
+							</div>
+						</div>
+					</div>
+					<!---//End-blog---->
+					<!----start-contact---->
+					
+					<!----//End-contact---->
+					<!---start-footer--->
+					<!----start-scrooling-script---->
+								 <a href="#move-top" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+							<!----//End-scrooling-script---->
+					<div data-scroll-reveal="enter bottom but wait 0.7s" class="footer">
+						<div data-scroll-reveal="enter bottom but wait 0.7s" class="footer-top">
+							<div class="wrap">
+								<ul>
+									<li class="active"><a href="index.html">总站首页<span> </span></a></li>
+									<li><a href="http://lyp0715.3vfree.com/">子站<span> </span></a></li>
+									<li><a href="#work">微信公众号</a></li>
+									<li><a href="flower/flower.html">花店</a></li>	
+									<li><a href="video/videoIndex.html">资源下载中心</a></li>	
+								</ul>
+							</div>
+						</div>
+						<div class="footer-bottom">
+							
+						</div>
+					</div>
+					<!---//End-footer--->
+					<!---stikey-header--->
+					<!----->
+					<script src="js/scrollReveal.min.js?ver=0.1.1"></script>
+				    <script type="text/javascript">
+				      (function($) {
+				        'use strict';
+				        window.scrollReveal = new scrollReveal({reset: true});
+				        // See: http://stackoverflow.com/a/11381730/989439
+				        var isMobile = (function () {
+				            var check = false;
+				            (function(a){if(/(android|ipad|playbook|silk|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+				            return check;
+				        })();
+				
+				        // This function returns the appropriate CSS-transition end event name
+				        // to the transitionEnd variable. e.g usage: $(el).on('transitionEnd', func(e));
+				        var transitionEnd = (function () {
+				            var t;
+				            var el = document.createElement('fakeelement');
+				            var transitions = {
+				              'transition':'transitionend',
+				              'OTransition':'oTransitionEnd',
+				              'MozTransition':'transitionend',
+				              'WebkitTransition':'webkitTransitionEnd'
+				            }
+				
+				            for(t in transitions){
+				                if( el.style[t] !== undefined ){
+				                    return transitions[t];
+				                }
+				            }
+				        })();
+				
+				        // Just for fun, let’s log out the results above.
+				        console.log("Is the current device mobile? " + isMobile + "\n"
+				          + "css transitions end-event name: " + transitionEnd);
+				
+				      })();
+				    </script>
+					<!----->
+			</div>
+		<!---//End-wrap---->
+		
+		
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css"/>		
+		
+	<script src="js/common.js"></script>
+<script src="js/csfn.js"></script>	
+		
+<script>
+	myEvent(window,'load',function(){
+		cs_fn.qqfn({
+			title : '在线咨询',	//选项卡的名称
+			qq : '个人咨询|1360461332,技术支持|1360461332,私人解答|1360461332,开发人员|1360461332',	//填写QQ号码和需显示的名称,每组以逗号隔开,不要超过8组
+		});
+		cs_fn.qrcode({
+			title : '二维码',		//选项卡的名称
+			imgPath : 'images/xinlang.jpg',	//二维码图片
+		});
+		
+	});
+</script>
+		
+		
+		
+<script type="text/javascript" charset="utf-8" src="https://www.v5kf.com/130684/v5kf.js"></script>	
+
+</body>
+</html>
