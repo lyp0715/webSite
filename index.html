@@ -8,19 +8,21 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta property="wb:webmaster" content="29d4298cdc0eb183" />
 		 <script src="http://cdn.goeasy.io/goeasy.js"></script>
-  <script>  
- var goEasy = new GoEasy({
+ <script type="text/javascript">
+				
+				$(function() {
+					 var goEasy = new GoEasy({
 appkey: "BC-fd8e74fa19374f2793ea39dd237025c4"
 });
-
+7
 goEasy.subscribe({
 channel: "test",
 onMessage: function (message) {
 alert("Channel:" + message.channel + " content:" + message.content);
 }
 });
-
-</script>  
+				});
+		</script>
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
 		<!----网页字体---->
