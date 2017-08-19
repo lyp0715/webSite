@@ -7,22 +7,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta property="wb:webmaster" content="29d4298cdc0eb183" />
-		 <script src="http://cdn.goeasy.io/goeasy.js"></script>
- <script type="text/javascript">
-				
-				$(function() {
-					 var goEasy = new GoEasy({
-appkey: "BC-fd8e74fa19374f2793ea39dd237025c4"
-});
-7
-goEasy.subscribe({
-channel: "test",
-onMessage: function (message) {
-alert("Channel:" + message.channel + " content:" + message.content);
-}
-});
-				});
-		</script>
+		
+			<script type="text/javascript" src="https://cdn.goeasy.io/goeasy.js"></script>
+
+                    <script type="text/javascript">
+            var goEasy = new GoEasy({appkey: 'BC-fd8e74fa19374f2793ea39dd237025c4'});
+                               goEasy.subscribe({
+                        channel: 'test',
+                        onMessage: function(message){
+                            alert('接收到消息:'+message.content);//拿到了信息之后，你可以做你任何想做的事
+                        }
+              });
+  </script>
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
 		<!----网页字体---->
